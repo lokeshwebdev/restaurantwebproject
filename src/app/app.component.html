@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+ </head>
+
+ <body>
+ <div class="main">
+  
+
+        <nav class="menu">
+		<div id="menu_btn" (click)="myFunction()" style="text-align: center;margin-top:20px"><label style="font-size:37px;padding: 0px 7px;background: #ffc600;">☰</label></div>
+ 
+<style>
+
+</style>
+
+          
+          <ul id="menu-list" [ngClass]="classname">
+            <li>
+              <a href="#" (click)="tacosFunction()">Tacos</a>
+            </li>
+            <li>
+              <a href="#" (click)="beersFunction()">Beers</a>
+            </li>
+            <li>
+              <a href="#" (click)="winesFunction()">Wines</a>
+            </li>
+            <li>
+              <a href="#" (click)="dessertsFunction()">Desserts</a>
+            </li>
+            <li>
+              <a href="#" (click)="reservationsFunction()">Reservations</a>
+            </li>
+          </ul>
+        </nav>
+  
+  <main>
+  <section>
+  <div class="banner" [style.background]="newbg"><h1>Terry's Taco Joint</h1><p>Pretty Good Tacos!</p></div>
+  <div class="sidebar" > 
+
+<div class="price_box">
+        <p class="price">{{itemprice1}}</p>
+        <p class="price_text">{{itemname1}}</p>
+      </div>
+	  
+	  <div class="price_box">
+        <p class="price">{{itemprice2}}</p>
+        <p class="price_text">{{itemname2}}</p>
+      </div>
+	  
+  </div>
+  
+  </section>
+  <section>
+  <div class="facility">
+    
+      <div class="facility_box">
+        <span class="img_icon">🌮</span>
+        <h1>Tacos</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="facility_box">
+        <span class="img_icon">🍺</span>
+        <h1>Beer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="facility_box">
+        <span class="img_icon">🍷</span>
+        <h1>Wine</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="facility_box">
+        <span class="img_icon">🎵</span>
+        <h1>Music</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      </div>
+    
+  
+   </section>
+   <section>
+    <div class="about_us">
+	<div class="about_img">
+      <img src="assets/queso-taco.png"></div>
+      <div class="about_des">
+        <h2>Featured Taco</h2>
+        <p>Slim Profile, easy to hold and loaded with cheese.</p>
+        <p>This is the one you have been waiting for</p>
+        <button>Learn More →</button>
+      </div>
+      
+    </div>
+
+   </section>
+   <section>
+    <div class="img_gallery">
+      <h2>Instant Grams</h2>
+	 <hr>
+	 <div class="img_gallery_box">
+	 
+    <div class="img_box">  <img src="assets/201x201.jpg"></div>
+    <div class="img_box">      <img src="assets/202x202.jpg"></div>
+       <div class="img_box">   <img src="assets/203x203.jpg"></div>
+        <div class="img_box">  <img src="assets/204x204.jpg"></div>
+        <div class="img_box">  <img src="assets/205x205.jpg"></div>
+        <div class="img_box">  <img src="assets/206x206.jpg"></div>
+        <div class="img_box">  <img src="assets/207x207.jpg"></div>
+        <div class="img_box">  <img src="assets/207x208.jpg"></div>
+        <div class="img_box">  <img src="assets/207x209.jpg"></div>
+        <div class="img_box">  <img src="assets/207x210.jpg"></div>
+	  </div>
+    </div>
+
+   </section>
+   <footer>
+   <p>&nbsp;</p>
+   </footer>
+   
+
+</main>
+</div>
+
+</body>
+</html>  
+
+
+ 

@@ -1,0 +1,113 @@
+html {
+   scroll-behavior: smooth;
+   }
+   body {
+      background-image: url(/assets/stopography.svg), linear-gradient( 110deg, #f93d66, #6d47d9);	
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-weight: 900;
+      margin: -8px;
+     
+   }
+   :root {
+      --yellow: #ffc600;
+      --black: #272727;
+  }
+    .main{margin: 0px auto; width:1200px} 
+    .menu{width:100%;  margin-bottom: 15px; float: left;     margin-top: 30px;}
+    
+    .menu ul {
+      display:flex; 
+      justify-content: space-between;
+      
+      padding: 0;
+      list-style: none;
+       
+  } 
+  .menu ul li{width:19%; }
+  .menu a {
+      
+      background: #ffc600;
+      display: block;
+      text-decoration: none;
+      padding: 10px;
+      text-align: center;
+      color: var(--black);
+      text-transform: uppercase;
+      font-size: 20px;
+  }
+  
+  .menu a:focus-within {
+   background: #70c71f; color:#fff}
+  .menustyle {
+     
+    padding: 25px;
+     
+    color: white;
+    font-size: 25px;
+    box-sizing: border-box;
+    display:block !important;     
+  }
+  .menustyle li{width:100% !important;margin-bottom: 8px;}
+  .banner{background: white url(/assets/taco.jpg); width:70%; min-height: 400px; float:left; display:flex;  flex-direction: column; justify-content: center; align-items: start;padding:40px ;  box-sizing: border-box; }
+  
+
+.banner h1{background:  #ffc600; width:auto; padding:10px;}
+.banner p{background:  #ffc600;width:auto;padding:10px;}
+
+.sidebar{width:28%;float:right; display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+.price_box{background:  #ffc600; text-align: center;text-align: center; height: 192px;
+    margin-bottom: 15px; width:100%;justify-content: center;display: flex; flex-direction: column;}
+.price {    margin: 0px;    font-size: 60px;     font-weight: 300; }
+.price_text{margin:5px}
+.facility{clear:both; display:flex;text-align:center; justify-content:space-between;flex-wrap: wrap;}
+.facility_box{background: #fff; width: 23%; padding: 5px; margin-bottom:10px}
+.img_icon{font-size: 50px;}
+.facility_box h1{margin: 3px;}
+.facility_box p{color:#555}
+.about_us{background: #fff; margin-top:10px;   padding: 50px; float:left; width:100%; box-sizing: border-box;}
+.about_img{float:left; width:40%;}
+.about_img img{width:100%;}
+.about_des{float:right;width:60%;}
+.about_des button{background:  #ffc600; border: 0px; padding: 10px;}
+.img_gallery{margin-top:15px;float: left;    width: 100%;}
+.img_gallery h2{text-align: center;
+    line-height: 5px;
+    margin-bottom: 10px;}
+	
+	.img_gallery hr{background:  #ffc600;
+    width: 100%;
+    height: 10px;
+    border: 0px;margin-bottom: 15px;}
+	
+	
+.img_gallery h2:before{
+    display: block;
+    content: '';
+    height: 10px;
+    }
+.img_gallery h2:after{
+    display: block;
+    content: '';
+    height: 10px;
+     
+}
+.img_box{width:19%; float:left;    margin-bottom: 7px;}
+.img_box img{width:100%;} 
+.img_gallery_box{display:flex;text-align:center; justify-content:space-between;float:left; flex-wrap:wrap}
+    
+
+@media (max-width:576px){.main{max-width:90%} .img_box{width:100%;}.about_img{width:100%;} .about_des{width:100%;}.facility_box{width:100%}.banner{width:100%;margin-bottom: 15px;} .sidebar{width: 100%;}.menu ul {display: none;} }
+
+@media (min-width:576px){.main{max-width:90%}.img_box{width:49%;}.about_img{width:100%;} .about_des{width:100%;}.facility_box{width:47%}
+.banner{width:100%;margin-bottom: 15px;} .sidebar{width: 100%;}.price_box{width:49%}.menu ul {display: none; } #menu-list{display:none}}
+
+@media (min-width:768px){.main{max-width:720px}.img_box{width:32%;}.about_img{width:49%;} .about_des{width:49%;}.facility_box{width:23%} .banner{width:70%} .sidebar{width: 28%;}.price_box{width:100%}.menu ul {display: flex;}  .menu a{font-size: 16px;}#menu-list{display:flex}#menu_btn{display:none}}
+
+
+@media (min-width:992px){.main{max-width:960px}.img_box{width:19%;}.banner{width:70%} .sidebar{width: 28%;}.menu ul {display: flex;}}
+
+
+@media (min-width:1200px){.main{max-width:1140px}.profile_img{width:20%;} .profile_des{width:70%} .facility_box {width:23%}.banner{width:70%} .sidebar{width: 28%;} .price_box{width:100%} #menu_btn{display:none}}
